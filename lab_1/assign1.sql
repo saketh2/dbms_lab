@@ -33,6 +33,6 @@ select * from Student where math>70 AND sci>70 AND eng>70 AND social>70 AND spor
 --10. Find the count of students in each group if I split the students as per every 20 roll numbers in one group.
 Note you can run multiple queries and count individually for this one or see if you can google a faster
 way with sql itself. Both will be graded equally just trying to pique your curiosity.
-select * from Student where rollno>=1 AND rollno<=20;
-select * from Student where rollno>=21 AND rollno<=40;
-select * from Student where rollno>=41 AND rollno<=60;
+select Count(rollno) from Student where rollno>=1 AND rollno<=20;
+select Count(rollno) from Student where rollno>=21 AND rollno<=40;
+select Count(rollno) from Student where rollno>=41 AND rollno<=60;
